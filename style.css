@@ -61,3 +61,32 @@
   bottom: 0;
   position: absolute;
 }
+
+.wrapp {
+  position: relative;
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background: rgb(170, 139, 199);
+  margin-top: 20px;
+}
+
+.centerDiv {
+  position: absolute;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(8, 5vw);
+  grid-gap: 15px;
+  border: 1px solid;
+  margin-top: 20px;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
