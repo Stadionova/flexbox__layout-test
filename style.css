@@ -2,19 +2,62 @@
   display: flex;
   background-color: rgb(173, 129, 62);
   border: 1px solid brown;
-  width: 1200px;
-  height: 100%;
+  /* width: 1200px;
+  height: 100%; */
   flex-flow: column;
-  flex-flow: nowrap;
+  /* элементы не перепрыгивают на новую строку */
+  flex-flow: row nowrap;
   justify-content: center;
+  /* элементы перепрыгивают на новую строку */
+  flex-flow: row wrap;
 }
 
 .child {
   background-color: wheat;
   border: 1px black;
-  width: 50px;
-  height: 20px;
+  /* width: 100%; */
+  /* width: 50px;
+  height: 20px; */
   margin-right: 10px;
   text-align: center;
   margin-bottom: 10px;
+}
+
+.first {
+  float: left;
+  display: block;
+  width: 300px;
+  border: 1px solid blue;
+  margin: 2px;
+}
+
+.second {
+  float: left;
+  display: block;
+  width: 300px;
+  border: 1px solid blue;
+  margin: 2px;
+}
+
+.parentDiv {
+  position: relative;
+  background: rgb(121, 116, 116);
+  height: 300px;
+}
+
+.child-div {
+  position: absolute;
+  bottom: 0;
+  background: rgb(136, 73, 73);
+  height: 200px;
+  width: 400px;
+}
+
+.first-block {
+  margin-bottom: 20px;
+}
+
+.inside-child {
+  bottom: 0;
+  position: absolute;
 }
