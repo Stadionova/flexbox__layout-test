@@ -227,3 +227,69 @@ body {
     margin-bottom: 0px;
   }
 }
+
+/* test position: absolute & position: relative */
+/* расположила блок в левом верхнем углу блока
+и отдвинула от границ внешнего блока свойствами top/left */
+
+.parentDiv-1 {
+  position: relative;
+  border: 1px solid;
+  background-color: rgb(105, 27, 105);
+  width: 600px;
+  height: 600px;
+  left: 40px;
+  top: 30px;
+}
+
+.childDiv-1 {
+  border: 1px solid;
+  background-color: thistle;
+  width: 150px;
+  height: 150px;
+  position: absolute;
+  left: 20px;
+  top: 20px;
+}
+
+/* test position: fixed */
+/* расположила блок в левом верхнем углу блока
+и отдвинула от границ внешнего блока свойствами top/left */
+
+.parentDiv-2 {
+  border: 1px solid;
+  background-color: rgb(6, 70, 3);
+  width: 600px;
+  height: 600px;
+}
+
+.childDiv-2 {
+  position: fixed;
+  border: 1px solid;
+  background-color: rgb(130, 211, 161);
+  width: 150px;
+  height: 150px;
+  left: 20px;
+  top: 20px;
+}
+
+/* test position: static */
+/* свойства top & left не работают */
+
+.parentDiv-3 {
+  border: 1px solid;
+  background-color: rgb(70, 3, 37);
+  width: 600px;
+  height: 600px;
+}
+
+.childDiv-3 {
+  position: static;
+  border: 1px solid;
+  background-color: rgb(216, 128, 164);
+  width: 150px;
+  height: 150px;
+  left: 20px;
+  top: 20px;
+}
+
